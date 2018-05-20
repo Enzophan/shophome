@@ -36,6 +36,7 @@ module.exports = function (app) {
             summary: req.body.summary,
             description: req.body.description,
             inStock: req.body.inStock,
+            price: req.body.price,
             rank: req.body.rank
         };
         shopHome.create (product , function (err, product){
@@ -63,6 +64,7 @@ module.exports = function (app) {
                 summary: req.body.summary,
                 description: req.body.description,
                 inStock: req.body.inStock,
+                price: req.body.price,                
                 rank: req.body.rank
             }, function (err, product){
                 if (err) {

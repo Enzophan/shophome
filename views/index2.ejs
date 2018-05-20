@@ -1,0 +1,52 @@
+<html ng-app="app.showhome">
+    
+    <head>
+        <title>
+            Product
+        </title>
+        <!--load cdn style-->
+        <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-xeditable/0.8.1/css/xeditable.min.css">
+        <!--load app css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+    
+        <!--load cdn scripts-->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-xeditable/0.8.1/js/xeditable.min.js"></script>
+    
+        <!--load app-->
+        <script src="assets/js/main/app.js"></script>
+        <script src="assets/js/main/services/svProducts.js"></script>
+    
+    
+    </head>
+    
+    <body ng-controller="productController">
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1 class="display-4">{{ appName }}
+                    <span class="label label-info">{{products.length}}</span>
+                </h1>
+            </div>
+            <div id="product-list" class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div class="checkbox" ng-repeat="product in products">
+                        <span editable-text="products.name" >{{ product.image1 }}</span>                        
+                        <span editable-text="products.name" >{{ product.name }}</span>
+                    </div>
+                    <p class="text-center" ng-show="loading">
+                        <span class="fa fa-spinner fa-spin fa-3x"></span>
+                    </p>
+                </div>
+            </div>
+
+    
+            </div>
+    
+        </div>
+    
+    
+    </body>
+    
+    </html>

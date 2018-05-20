@@ -13,6 +13,7 @@ module.exports = function (app) {
                 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
                 description: "",
                 inStock: true,
+                price: "100000",                
                 rank: "1"
             },
             {
@@ -25,6 +26,7 @@ module.exports = function (app) {
                 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
                 description: "",
                 inStock: true,
+                price: "100000",                                
                 rank: "1"
             },
             {
@@ -37,6 +39,7 @@ module.exports = function (app) {
                 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
                 description: "",
                 inStock: true,
+                price: "100000",                                
                 rank: "1"
             }
         ];

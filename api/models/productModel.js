@@ -12,6 +12,7 @@ var productSchema = new Schema ({
     summary: String,
     description: String,
     inStock: Boolean,
+    price: String,
     rank: Number
 });
 
