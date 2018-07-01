@@ -106,10 +106,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4" ng-repeat="product in products | orderBy:'+rank'">
               <div class="card h-100"  >
-                <a href="#"><img class="card-img-top" src="{{ product.image1 }}" alt="" style="width:252px;height:150px;" ></a>
+                <a href="/{{product._id}}"><img class="card-img-top" src="{{ product.image1 }}" alt="" style="width:252px;height:150px;" ></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="#">{{ product.name }}</a>
+                    <a href="/{{product._id}}">{{ product.name }}</a>
                   </h4>
                   <h5>{{ product.price }}</h5>
                   <p class="card-text">{{ product.summary }}</p>
@@ -142,8 +142,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
   </body>
 

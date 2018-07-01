@@ -1,0 +1,49 @@
+
+<html ng-app="app.showhome" lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Details</title>
+
+<head>
+    <!--load cdn scripts-->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-xeditable/0.8.1/js/xeditable.min.js"></script>
+    
+
+    <!--load app-->
+    <script src="assets/js/main/app.js"></script>
+    <script src="assets/js/main/services/svProducts.js"></script>
+
+
+</head>
+
+<body ng-controller="productDetail">
+    <h1>Details ID: <%= productId %></h1>
+    <h1>{{appName}}</h1>
+    <h2>{{message}}</h2>
+    <h3>{{products.name}}</h3>
+    <a href="#"><img class="card-img-top" src="{{ products.image1 }}" alt="" style="width:252px;height:150px;" ></a>
+    
+
+    <h3>{{detail}}</h3>
+</body>
+
+<!-- <script>
+    var app = angular.module('appProduct', []);
+
+    app.controller("productDetail",['$scope', 'svProducts', function ($scope, svProducts) {
+        // var self = this;
+        $scope.message = "This is display an product details";
+    
+        
+        svProducts.details(product._id)
+        .then(function(response) {
+            $scope.product = response.data;
+          });
+</script> -->
+
+
+</html>

@@ -6,7 +6,7 @@ app.factory("svProducts", ["$http", function ($http) {
         get: function () {
             return $http.get("/api/products");
         },
-        details: function (id) {
+        getDetail: function (id) {
             return $http.get("/api/product/" + id);
         },
         create: function (productData) {
