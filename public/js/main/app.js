@@ -7,6 +7,7 @@ var app = angular.module("app.showhome", ["xeditable"]);
 // })
 
 app.controller('productController', ['$scope', 'svProducts', function ($scope, svProducts) {
+    $scope.brand = "Phan Nhân";
     $scope.appName = "Xiaomi Online";
     $scope.message = "This is display an product details";
     $scope.fromData = {};
@@ -24,13 +25,13 @@ app.controller('productController', ['$scope', 'svProducts', function ($scope, s
 
 app.controller("productDetail", ['$scope', 'svProducts', function ($scope, svProducts) {
     // var self = this;
-    
+    $scope.brand = "Phan Nhân";
+    $scope.appName = "Xiaomi Online";
     $scope.message = "This is display an product details";
-
-    console.log ($scope.message);
-
+    console.log($scope.message);
+    console.log(id);
     
-    svProducts.getDetail("5ae8a2109d036937808b403b").then(function (data) {
+    svProducts.getDetail(id).then(function (data) {
         $scope.products = data.data;
         $scope.loading = false;
     });

@@ -28,6 +28,18 @@ app.get ("/", function (req,res){
     res.render ("index");
 });
 
+app.get ("/about", function (req,res){
+    res.render ("index");
+});
+
+app.get ("/services", function (req,res){
+    res.render ("index");
+});
+
+app.get ("/contact", function (req,res){
+    res.render ("index");
+});
+
 app.get ("/product/:id", function (req,res){
     var id = req.params.id
     res.render ("details", { name: productController.get[id] });
